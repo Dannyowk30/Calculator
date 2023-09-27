@@ -15,29 +15,31 @@
             <p class="notification">&#9993 &#9992</p>
         </div>
         <div class="result-container">
-            <p class="result">8,250</p>
+            <p class="calcu" id="calcu"></p>
+            <p class="result" id="result"></p>
         </div>
         <div class="btn-container">
-            <div class="btn function ac">AC</div>
-            <div class="btn function pm">±</div>
-            <div class="btn function percent">%</div>
-            <div class="btn operator division">/</div>
-            <div class="btn number-1">1</div>
-            <div class="btn number-2">2</div>
-            <div class="btn number-3">3</div>
-            <div class="btn operator multiplication">x</div>
-            <div class="btn number-4">4</div>
-            <div class="btn number-5">5</div>
-            <div class="btn number-6">6</div>
-            <div class="btn operator subtraction">-</div>
-            <div class="btn number-7">7</div>
-            <div class="btn number-8">8</div>
-            <div class="btn number-9">9</div>
-            <div class="btn operator addition">+</div>
-            <div class="btn number-0">0</div>
-            <div class="btn number decimal">.</div>
-            <div class="btn number equals">=</div>
+            <input type="button" class="btn function ac" value="AC" onclick="document.getElementById('calcu').innerHTML = ''" ondblclick="document.getElementById('result').innerHTML=''">
+            <input type="button" class="btn function pm" value="DE" onclick="document.getElementById('calcu').innerHTML= document.getElementById('calcu').innerHTML.toString().slice(0, -1)">
+            <input type="button" class="btn function percent" value="%" onclick="document.getElementById('calcu').innerHTML += '%'">
+            <input type="button" class="btn operator division" value="/" onclick="document.getElementById('calcu').innerHTML += '/'">
+            <input type="button" class="btn number-1" value="1" onclick="document.getElementById('calcu').innerHTML += '1'">
+            <input type="button" class="btn number-2" value="2" onclick="document.getElementById('calcu').innerHTML += '2'">
+            <input type="button" class="btn number-3" value="3" onclick="document.getElementById('calcu').innerHTML += '3'">
+            <input type="button" class="btn operator multiplication" value="*" onclick="document.getElementById('calcu').innerHTML += '*'">
+            <input type="button" class="btn number-4" value="4" onclick="document.getElementById('calcu').innerHTML += '4'">
+            <input type="button" class="btn number-5" value="5" onclick="document.getElementById('calcu').innerHTML += '5'">
+            <input type="button" class="btn number-6" value="6" onclick="document.getElementById('calcu').innerHTML += '6'">
+            <input type="button" class="btn operator subtraction" value="-" onclick="document.getElementById('calcu').innerHTML += '-'">
+            <input type="button" class="btn number-7" value="7" onclick="document.getElementById('calcu').innerHTML += '7'">
+            <input type="button" class="btn number-8" value="8" onclick="document.getElementById('calcu').innerHTML += '8'">
+            <input type="button" class="btn number-9" value="9" onclick="document.getElementById('calcu').innerHTML += '9'">
+            <input type="button" class="btn operator addition" value="+" onclick="document.getElementById('calcu').innerHTML += '+'">
+            <input type="button" class="btn number-0" value="0" onclick="document.getElementById('calcu').innerHTML += '0'">
+            <input type="button" class="btn number decimal" value="." onclick="document.getElementById('calcu').innerHTML += '.'">            
+            <button class="btn number equals" onclick="equals()">=</button>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

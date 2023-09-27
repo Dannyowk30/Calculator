@@ -29,19 +29,31 @@ body{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-}
+        height: 30px;
+    }
     .result-container{
         height: 15vh;
-        display: flex;
-        justify-content: right;
-        align-items: flex-end;
-}
-    .result{
-        font-size: 50px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: right;
+        margin-top: 10px;
         margin-bottom: 10px;
-        margin-right: 10px;
+        border: solid rgb(68, 61, 18) 5px;
+        border-radius: 20px;
+        padding: 5px;
+        background: grey;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .calcu{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        color: tomato;
+    }
+    .result{
+        font-size: 35px;
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        text-transform: capitalize;
     }
     .btn-container{
         display: grid;
