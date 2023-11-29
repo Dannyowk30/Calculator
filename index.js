@@ -1,7 +1,6 @@
 const One =()=>{
     document.getElementById('calcu').innerHTML += '1'
 };
-ll
 
 const Two =()=>{
     document.getElementById('calcu').innerHTML += '2'
